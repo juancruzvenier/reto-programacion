@@ -1,0 +1,154 @@
+/* src/styles/Contact.css */
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #cf5a06;
+}
+
+.contact-content-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Por defecto una columna */
+    gap: 2.5rem;
+}
+
+/* Para pantallas más grandes, dos columnas */
+@media (min-width: 768px) {
+    .contact-content-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.contact-form-card, .contact-map-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+}
+
+.contact-form-title, .contact-map-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #444;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 0.8rem;
+}
+
+.form-label {
+    display: block;
+    color: #444;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #8a2be2;
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2);
+}
+
+.form-input.textarea {
+    resize: vertical; /* Permite redimensionar verticalmente el textarea */
+    min-height: 120px;
+}
+
+/* --- ESTILOS DE VALIDACIÓN --- */
+/* Estas clases deben ser consistentes con las de Tickets.css */
+.input-error {
+    border-color: #e74c3c; /* Rojo para indicar error */
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2);
+}
+
+.input-success {
+    border-color: #27ae60; /* Verde para indicar éxito */
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
+}
+/* --- FIN ESTILOS DE VALIDACIÓN --- */
+
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 0.4rem;
+    font-style: italic;
+}
+
+.submit-button {
+    background-color: #cf5a06;
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.submit-button:hover {
+    background-color: #8a2be2;
+    transform: translateY(-2px);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+/* Estilos para el mapa */
+.map-wrapper {
+    position: relative;
+    padding-bottom: 75%; /* Proporción 4:3 para el mapa */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.location-text {
+    text-align: center;
+    color: #666;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}

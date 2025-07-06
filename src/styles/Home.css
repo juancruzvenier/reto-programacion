@@ -1,0 +1,114 @@
+/* src/styles/Home.css */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.home-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #cf5a06; /* Púrpura más vibrante */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.home-description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: #cf5a06; /* Azul violeta */
+}
+
+/* Video Promocional */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Géneros Musicales */
+.genre-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+}
+
+.genre-item {
+    background: linear-gradient(135deg, #a0d9e0, #cf5a06); /* Ejemplo de gradiente */
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.genre-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Colores específicos para géneros (opcional) */
+.genre-item-1 { background: linear-gradient(135deg, #a0d9e0, #4a90e2); }
+.genre-item-2 { background: linear-gradient(135deg, #d4a5a5, #e05c6e); }
+.genre-item-3 { background: linear-gradient(135deg, #a5d4a5, #6ab04c); }
+.genre-item-4 { background: linear-gradient(135deg, #e0d0a0, #f7d794); }
+.genre-item-5 { background: linear-gradient(135deg, #c0a0e0, #9b59b6); }
+.genre-item-6 { background: linear-gradient(135deg, #a0e0e0, #2ecc71); }
+
+
+/* Galería de Fotos */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}

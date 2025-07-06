@@ -1,0 +1,17 @@
+/* src/styles/App.css */
+/* Aquí puedes poner estilos que afecten a toda la aplicación,
+   como un padding general o propiedades de tipografía que no sean de componentes */
+
+/* Ejemplo: Footer básico para la app */
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 0;
+}

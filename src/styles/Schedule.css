@@ -1,0 +1,73 @@
+/* src/styles/Schedule.css */
+.schedule-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.schedule-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #cf5a06;
+}
+
+.schedule-day-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.schedule-day-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #cf5a06;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.8rem;
+}
+
+.schedule-events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+}
+
+.schedule-event-item {
+    background-color: #f8f8f8;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s ease;
+}
+
+.schedule-event-item:hover {
+    background-color: #f0f0f0;
+}
+
+.event-time {
+    color: #cf5a06;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    min-width: 80px; /* Asegura que la hora tenga un ancho mínimo */
+}
+
+.event-artist {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .schedule-events-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+}

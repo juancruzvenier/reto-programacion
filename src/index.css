@@ -1,0 +1,23 @@
+/* src/index.css */
+/* Reseteo básico para eliminar estilos por defecto del navegador */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7fa; /* Fondo suave para toda la app */
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
